@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_f"
+    tools:context=".AuthActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:background="@drawable/redondo_white"
+            android:backgroundTint="@color/sec"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contraseña"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:background="@drawable/redondo_white"
+            android:backgroundTint="@color/sec"
+            android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/signUpbutton"
+                android:layout_width="200dp"
+                android:background="@drawable/redondo_green"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/entrar" />
+
+        <TextView
+            android:id="@+id/tv_crear_cuenta"
+            android:text="@string/crear_cuenta"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_olvide_mi_contrasena"
+            android:text="@string/olvide_mi_contrasena"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
