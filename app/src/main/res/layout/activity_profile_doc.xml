@@ -22,16 +22,15 @@
         android:layout_height="100dp"
         android:layout_marginRight="150dp"
         android:layout_marginLeft="150dp"
-        android:src="@tools:sample/avatars"
+        android:src="@android:drawable/ic_menu_myplaces"
         android:contentDescription="@string/fotoUser" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="241dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="80dp"
+        android:layout_gravity="center"
         android:layout_marginTop="28dp"
-        android:layout_marginRight="150dp"
         android:fontFamily="sans-serif"
         android:text="@string/username"
         android:textColor="@color/black"

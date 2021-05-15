@@ -58,25 +58,25 @@ class AuthActivity : AppCompatActivity() {
                 }
             }
 
-            loginButton.setOnClickListener {
-                if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
-                //Firebase instancai
-
-                FirebaseAuth.getInstance()
-                    .signInWithEmailAndPassword(emailEditText.text.toString(),passwordEditText.text.toString())
-                    .addOnCompleteListener(){
-
-                        if (it.isSuccessful){
-                            showHome(it.result?.user?.email?:"",ProviderType.BASIC)
-                        }
-                        else{
-
-                            showAlert()
-                        }
-                    }
-            }
-
-            }
+//            loginButton.setOnClickListener {
+//                if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
+//                //Firebase instancai
+//
+//                FirebaseAuth.getInstance()
+//                    .signInWithEmailAndPassword(emailEditText.text.toString(),passwordEditText.text.toString())
+//                    .addOnCompleteListener(){
+//
+//                        if (it.isSuccessful){
+//                            showHome(it.result?.user?.email?:"",ProviderType.BASIC)
+//                        }
+//                        else{
+//
+//                            showAlert()
+//                        }
+//                    }
+//            }
+//
+//            }
         }
                 private fun showAlert(){
 
