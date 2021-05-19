@@ -22,7 +22,7 @@
         android:layout_height="100dp"
         android:layout_marginRight="150dp"
         android:layout_marginLeft="150dp"
-        android:src="@android:drawable/ic_menu_myplaces"
+        android:src="@android:drawable/ic_menu_gallery"
         android:contentDescription="@string/fotoUser" />
 
     <TextView
@@ -30,7 +30,7 @@
         android:layout_width="241dp"
         android:layout_height="36dp"
         android:layout_gravity="center"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif"
         android:text="@string/username"
         android:textColor="@color/black"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:orientation="vertical"
         android:background="@drawable/white_card">
@@ -62,7 +62,7 @@
             android:id="@+id/nombre1"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:textSize="12pt"
             android:layout_gravity="center"
             android:background="@drawable/redondo_green"
@@ -75,20 +75,74 @@
             android:layout_width="67dp"
             android:layout_height="67dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/green"
             android:background="@drawable/redondo_principal_azul"
             android:textColor="@android:color/white"
             tools:srcCompat="@drawable/image_menu_green" />
 
-        <ImageButton
-            android:id="@+id/add1"
-            android:layout_width="67dp"
-            android:layout_height="67dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/image_menu"
- />
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibtn_ambulance"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_alignStart="@+id/ibtn_botiquin"
+                android:layout_alignEnd="@+id/ibtn_buscar"
+                android:layout_marginStart="92dp"
+                android:layout_marginEnd="92dp"
+                android:background="@drawable/image_ambulance"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/ibtn_botiquin"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/image_botiquin"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/ibtn_buscar"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/image_busqueda"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/ibtn_abrir"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_below="@+id/ibtn_ambulance"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="161dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="161dp"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/image_menu" />
+
+
+        </RelativeLayout>
 
 
     </LinearLayout>

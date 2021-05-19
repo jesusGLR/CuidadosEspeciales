@@ -92,17 +92,17 @@ class AuthActivity : AppCompatActivity() {
                 //Muestra el index
         private fun showHome(email:String,provider:ProviderType){
 
-                val homeIntent= Intent(this,HomeActivity::class.java).apply{
+                val profileIntent= Intent(this,profile_docActivity::class.java).apply{
                     putExtra("email",email)
                     putExtra("provider",provider.name)
                 }
-                startActivity(homeIntent)
+                startActivity(profileIntent)
         }
             //Muestra el index
              private fun showIndex(){
-                    val homeIntent= Intent(this,IndexActivity::class.java).apply{
+                    val profileIntent= Intent(this,IndexActivity::class.java).apply{
                 }
-                       startActivity(homeIntent)
+                       startActivity(profileIntent)
 
 
              }
