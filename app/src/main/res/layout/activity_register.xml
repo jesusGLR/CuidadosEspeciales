@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/celular"
+            android:text="@string/correo"
             android:gravity="center"
             android:fontFamily="sans-serif"
             android:textColor="@color/black"

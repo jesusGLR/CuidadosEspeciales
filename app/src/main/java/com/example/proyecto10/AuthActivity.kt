@@ -7,10 +7,12 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
+import kotlinx.android.synthetic.main.activity_profile_doc.*
 import java.security.Provider
 
 class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
        // super.onCreate(savedInstanceState)
        // setContentView(R.layout.activity_auth)
 
@@ -20,6 +22,10 @@ class AuthActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
+
+
+
+
 
                 //Analytics Event
         val analytics = FirebaseAnalytics.getInstance(this)
@@ -39,6 +45,10 @@ class AuthActivity : AppCompatActivity() {
 
         private fun setup(){
             title="    Cuidados Especiales - Iniciar sesión"
+//            tv_olvide_mi_contrasena.setOnClickListener{
+//                val intent = Intent(this, profile_docActivity::class.java)
+//                startActivity(intent)
+//            }
 
             signUpbutton.setOnClickListener{
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {

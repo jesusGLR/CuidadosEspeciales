@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import kotlinx.android.synthetic.main.activity_auth.*
 import kotlinx.android.synthetic.main.activity_profile_doc.*
 
 class profile_docActivity : AppCompatActivity() {
@@ -36,6 +37,7 @@ class profile_docActivity : AppCompatActivity() {
             val intent = Intent(this, ambulanceActivity::class.java)
             startActivity(intent)
         }
+
     }
 
     private fun onAddButtonClicked() {
