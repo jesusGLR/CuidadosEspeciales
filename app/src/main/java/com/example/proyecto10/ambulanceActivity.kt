@@ -45,6 +45,10 @@ class ambulanceActivity : AppCompatActivity() {
             val intent = Intent(this, ambulanceActivity::class.java)
             startActivity(intent)
         }
+        btn_ubicacion.setOnClickListener{
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
         llamar.setOnClickListener{
         hacerLlamada()
         }

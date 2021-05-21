@@ -45,10 +45,10 @@ class AuthActivity : AppCompatActivity() {
 
         private fun setup(){
             title="    Cuidados Especiales - Iniciar sesión"
-//            tv_olvide_mi_contrasena.setOnClickListener{
-//                val intent = Intent(this, profile_docActivity::class.java)
-//                startActivity(intent)
-//            }
+            tv_crear_cuenta.setOnClickListener{
+                val intent = Intent(this, registerActivity::class.java)
+                startActivity(intent)
+            }
 
             signUpbutton.setOnClickListener{
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty()) {
