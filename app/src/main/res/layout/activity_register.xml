@@ -119,18 +119,19 @@
             tools:ignore="LabelFor" />
 
 
-        <Button
-            android:id="@+id/save2"
-            android:layout_width="178dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="125dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="125dp"
-            android:background="@drawable/redondo_green"
-            android:text="@string/guardar"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
+            <Button
+                android:id="@+id/save2"
+                style="@style/AppTheme"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="125dp"
+                android:background="@drawable/redondo_green"
+                android:text="@string/guardar"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
 
             <ImageButton
                 android:id="@+id/ibtn_atras"

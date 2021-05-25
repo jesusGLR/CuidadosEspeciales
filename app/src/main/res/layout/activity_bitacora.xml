@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@drawable/fondo_g"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/fondo_ovalado_abajo"
-        android:orientation="vertical">
+         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/busqueda"
+            android:layout_marginTop="50dp"
+            android:text="@string/bitacora"
             android:textSize="30sp"
             android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginLeft="10pt"
-            android:layout_marginRight="10pt"
-            android:layout_marginBottom="20dp"
-            android:background="@color/blueBajo"
-            android:ems="10"
-            android:hint="Nombre de la enfermedad"
-            android:inputType="textPersonName" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nombre del paciente"
+            android:textSize="30sp" />
 
-
-        <ImageButton
-            android:id="@+id/ibtn_bus"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/image_busqueda"
-            android:contentDescription="@string/microphone" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/redondo_white_z"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:orientation="vertical">
 
@@ -61,7 +46,8 @@
             android:layout_marginTop="30dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/resultados"
+            android:textStyle="bold"
+            android:text="@string/notas_realizadas"
             android:textSize="20sp" />
         <ListView
             android:layout_width="match_parent"
@@ -138,7 +124,9 @@
 
 
 
-        </LinearLayout>
     </LinearLayout>
+
+    </LinearLayout>
+
 
 

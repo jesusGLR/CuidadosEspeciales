@@ -6,34 +6,26 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import kotlinx.android.synthetic.main.activity_auth.*
 import kotlinx.android.synthetic.main.activity_profile_doc.*
-import kotlinx.android.synthetic.main.activity_register.*
 
-class profile_docActivity : AppCompatActivity() {
+class BitacoraActivity : AppCompatActivity() {
 
     private val rotateOpen: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.rotate_open_anim)}
     private val rotateClose: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.rotate_close_anim)}
     private val fromBottom: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.from_bottom_anim)}
     private val toBottom: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.to_bottom_anim)}
-
     private var clicked = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_doc)
+        setContentView(R.layout.activity_bitacora)
 
         ibtn_abrir.setOnClickListener{
-            val intent = Intent(this, BitacoraActivity::class.java)
-            startActivity(intent)
             onAddButtonClicked()
+
         }
         ibtn_botiquin.setOnClickListener{
             val intent = Intent(this, profile_docActivity::class.java)
-            startActivity(intent)
-        }
-        ibtn_exit.setOnClickListener{
-            val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)
         }
         ibtn_buscar.setOnClickListener{
@@ -44,12 +36,8 @@ class profile_docActivity : AppCompatActivity() {
             val intent = Intent(this, ambulanceActivity::class.java)
             startActivity(intent)
         }
-        ibtn_add_paciente.setOnClickListener {
-            val intent = Intent(this, Register_pacientActivity::class.java)
-            startActivity(intent)
-        }
-    }
 
+    }
     private fun onAddButtonClicked() {
         setVisibility(clicked)
         setAnimation(clicked)

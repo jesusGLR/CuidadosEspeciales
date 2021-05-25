@@ -11,9 +11,10 @@
     <string name="login_failed">"Login failed"</string>
 
     <!-- Strings for personal information -->
-    <string name="nombre">NOMBRE DEL PACIENTE</string>
+    <string name="bitacora">BITACORA</string>
     <string name="name">NOMBRE</string>
     <string name="ocupacion">OCUPACIÓN</string>
+    <string name="notas_realizadas">NOTAS REALIZADAS</string>
     <string name="contraseña">CONTRASEÑA</string>
     <string name="username">NOMBRE DE USUARIO</string>
     <string name="edad">EDAD</string>
@@ -54,7 +55,7 @@
     <string name="llamar">LLAMAR</string>
 
     <!-- Strings History -->
-    <string name="busqueda">BUSQUEDA</string>
+    <string name="busqueda">BUSQUEDA DE ENFERMEDADES</string>
     <string name="resultados">RESULTADOS</string>
     <string name="chequeos_periodicos">CHEQUEOS PERÍODICOS</string>
     <string name="suministrar_insulina">SUMINISTRAR INSULINA</string>
@@ -62,6 +63,7 @@
     <string name="contrasena">Contraseña</string>
     <string name="crear_cuenta"> Crear cuenta</string>
     <string name="olvide_mi_contrasena"> Olvidé mi contraseña</string>
+    <string name="nombre">nombre</string>
 
 
 </resources>

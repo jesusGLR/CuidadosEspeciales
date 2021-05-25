@@ -22,8 +22,9 @@ class ambulanceActivity : AppCompatActivity() {
     private val rotateClose: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.rotate_close_anim)}
     private val fromBottom: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.from_bottom_anim)}
     private val toBottom: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.to_bottom_anim)}
-    private val PHONE_CALL_REQUEST_CODE = 1
     private var clicked = false
+
+    private val PHONE_CALL_REQUEST_CODE = 1
     private val numero="911"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,8 @@ class ambulanceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_ambulance)
 
         ibtn_abrir.setOnClickListener{
+            val intent = Intent(this, BitacoraActivity::class.java)
+            startActivity(intent)
             onAddButtonClicked()
         }
         ibtn_botiquin.setOnClickListener{

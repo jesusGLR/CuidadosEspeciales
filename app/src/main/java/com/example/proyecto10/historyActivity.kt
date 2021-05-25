@@ -21,6 +21,8 @@ class historyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_history)
 
         ibtn_abrir.setOnClickListener{
+            val intent = Intent(this, BitacoraActivity::class.java)
+            startActivity(intent)
             onAddButtonClicked()
         }
 
