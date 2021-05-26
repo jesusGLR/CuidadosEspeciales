@@ -65,7 +65,7 @@
             android:textSize="20sp" />
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="70pt"/>
+            android:layout_height="100dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                     android:layout_alignStart="@+id/ibtn_abrir"
                     android:layout_marginStart="-91dp"
                     android:layout_marginBottom="-8dp"
-                    android:background="@drawable/image_botiquin"
+                    android:background="@drawable/image_logo"
                     android:clickable="true"
                     android:focusable="true"
                     android:visibility="invisible" />
@@ -116,7 +116,7 @@
                     android:layout_alignEnd="@+id/ibtn_abrir"
                     android:layout_marginEnd="-91dp"
                     android:layout_marginBottom="-4dp"
-                    android:background="@drawable/image_busqueda"
+                    android:background="@drawable/image_botiquin"
                     android:clickable="true"
                     android:focusable="true"
                     android:visibility="invisible" />

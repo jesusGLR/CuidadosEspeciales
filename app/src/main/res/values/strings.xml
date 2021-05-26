@@ -50,6 +50,7 @@
 
     <!-- Strings ambulance -->
     <string name="ubidad_medica">UNIDAD MÉDICA</string>
+    <string name="hospital_san_jose">HOSPITAL SAN JOSE</string>
     <string name="ubicacion">UBICACIÓN</string>
     <string name="distanciaKm">DISTANCIA KM</string>
     <string name="llamar">LLAMAR</string>

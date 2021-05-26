@@ -24,12 +24,10 @@ class profile_docActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile_doc)
 
         ibtn_abrir.setOnClickListener{
-            val intent = Intent(this, BitacoraActivity::class.java)
-            startActivity(intent)
             onAddButtonClicked()
         }
         ibtn_botiquin.setOnClickListener{
-            val intent = Intent(this, profile_docActivity::class.java)
+            val intent = Intent(this, BitacoraActivity::class.java)
             startActivity(intent)
         }
         ibtn_exit.setOnClickListener{

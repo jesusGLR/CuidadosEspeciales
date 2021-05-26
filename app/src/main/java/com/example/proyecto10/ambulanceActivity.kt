@@ -32,8 +32,6 @@ class ambulanceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_ambulance)
 
         ibtn_abrir.setOnClickListener{
-            val intent = Intent(this, BitacoraActivity::class.java)
-            startActivity(intent)
             onAddButtonClicked()
         }
         ibtn_botiquin.setOnClickListener{
@@ -45,7 +43,7 @@ class ambulanceActivity : AppCompatActivity() {
             startActivity(intent)
         }
         ibtn_ambulance.setOnClickListener{
-            val intent = Intent(this, ambulanceActivity::class.java)
+            val intent = Intent(this, BitacoraActivity::class.java)
             startActivity(intent)
         }
         btn_ubicacion.setOnClickListener{
